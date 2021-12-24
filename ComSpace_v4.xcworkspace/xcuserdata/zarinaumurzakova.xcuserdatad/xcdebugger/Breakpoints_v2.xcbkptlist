@@ -62,8 +62,8 @@
             filePath = "ComSpace_v4/Controllers/Login/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "loginButtonDidLogOut(_:)"
             landmarkType = "7">
          </BreakpointContent>

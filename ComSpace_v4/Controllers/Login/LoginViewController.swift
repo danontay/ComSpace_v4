@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import FBSDKLoginKit
 import FirebaseAuth
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
@@ -67,9 +68,11 @@ class LoginViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        GIDSignIn.sharedInstance.presentingViewController = self
+        
         view.backgroundColor = .white
         title = "Log In"
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Register",
             style: .done,
