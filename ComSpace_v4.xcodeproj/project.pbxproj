@@ -28,6 +28,7 @@
 		477AC8DB2770B34000F1C4DD /* Mulish-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 477AC8D82770B34000F1C4DD /* Mulish-Italic.ttf */; };
 		477AC8DF2773BD1800F1C4DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 477AC8DE2773BD1800F1C4DD /* GoogleService-Info.plist */; };
 		477AC8E1277478DF00F1C4DD /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8E0277478DF00F1C4DD /* DataBaseManager.swift */; };
+		477AC8E52777252D00F1C4DD /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8E42777252D00F1C4DD /* LaunchScreen.swift */; };
 		E741EDFCF32C29B5C3D88BF8 /* Pods_ComSpace_v4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637A766A8425E5B21081744E /* Pods_ComSpace_v4.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		477AC8D82770B34000F1C4DD /* Mulish-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Italic.ttf"; sourceTree = "<group>"; };
 		477AC8DE2773BD1800F1C4DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		477AC8E0277478DF00F1C4DD /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		477AC8E42777252D00F1C4DD /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		637A766A8425E5B21081744E /* Pods_ComSpace_v4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComSpace_v4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE90E948B2EB05EE029F521 /* Pods-ComSpace_v4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComSpace_v4.release.xcconfig"; path = "Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4.release.xcconfig"; sourceTree = "<group>"; };
 		F8E837CA8160009037AF14FF /* Pods-ComSpace_v4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComSpace_v4.debug.xcconfig"; path = "Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				477AC8CD2770B0AC00F1C4DD /* AllEventsViewController.swift */,
 				477AC8CF2770B0B700F1C4DD /* MyEventsViewController.swift */,
 				477AC8D12770B0DA00F1C4DD /* NewConversationViewController.swift */,
+				477AC8E42777252D00F1C4DD /* LaunchScreen.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			files = (
 				477AC8C22770B03B00F1C4DD /* LoginViewController.swift in Sources */,
 				477AC8CE2770B0AC00F1C4DD /* AllEventsViewController.swift in Sources */,
+				477AC8E52777252D00F1C4DD /* LaunchScreen.swift in Sources */,
 				477AC8C42770B04600F1C4DD /* RegisterViewController.swift in Sources */,
 				477AC8A62770A78300F1C4DD /* ConversationsViewController.swift in Sources */,
 				477AC8E1277478DF00F1C4DD /* DataBaseManager.swift in Sources */,

@@ -19,8 +19,11 @@ class ConversationsViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
+        //
+        LaunchScreen()
+        if LaunchScreen().check() == true{
         validateAuth()
+        }
     }
     private func validateAuth(){
         
@@ -31,6 +34,9 @@ class ConversationsViewController: UIViewController {
                   nav.modalPresentationStyle = .fullScreen
                   present(nav, animated: false)
               }
+        
+    }
+    private func launchScreen(){
         
     }
 }
