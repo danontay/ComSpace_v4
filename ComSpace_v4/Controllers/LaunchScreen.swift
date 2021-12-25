@@ -68,8 +68,8 @@ struct LaunchScreen_Previews: PreviewProvider {
     static var previews: some View {
         LaunchScreen()
             .previewDevice("iPhone 13")
-        LaunchScreen()
-            .previewDevice("iPhone 8")
+//        LaunchScreen()
+//            .previewDevice("iPhone 8")
     }
 }
 extension View{
