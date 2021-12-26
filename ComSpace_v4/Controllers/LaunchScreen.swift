@@ -9,16 +9,24 @@ import SwiftUI
 import UIKit
 
 struct LaunchScreen: View {
+    
     @State var showLoginPage: Bool = false
+    
     private let imageView: UIImageView = {
+    
         let imageView = UIImageView()
         imageView.image = UIImage(named: "MainLogoSvg")
         imageView.contentMode = .scaleAspectFit
         return imageView
+    
     }()
+    
     var body: some View {
+    
         VStack{
+        
             Spacer()
+            
             HStack{
                 Image("whitelogo")
                 VStack{

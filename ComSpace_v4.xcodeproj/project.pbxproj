@@ -16,8 +16,6 @@
 		477AC8AE2770A78300F1C4DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477AC8AC2770A78300F1C4DD /* LaunchScreen.storyboard */; };
 		477AC8C22770B03B00F1C4DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8C12770B03B00F1C4DD /* LoginViewController.swift */; };
 		477AC8C42770B04600F1C4DD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8C32770B04600F1C4DD /* RegisterViewController.swift */; };
-		477AC8C62770B07200F1C4DD /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8C52770B07200F1C4DD /* PhotoViewerViewController.swift */; };
-		477AC8C82770B08D00F1C4DD /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8C72770B08D00F1C4DD /* VideoPlayerViewController.swift */; };
 		477AC8CA2770B09500F1C4DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8C92770B09500F1C4DD /* HomeViewController.swift */; };
 		477AC8CC2770B09F00F1C4DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8CB2770B09F00F1C4DD /* ProfileViewController.swift */; };
 		477AC8CE2770B0AC00F1C4DD /* AllEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8CD2770B0AC00F1C4DD /* AllEventsViewController.swift */; };
@@ -30,11 +28,14 @@
 		477AC8DF2773BD1800F1C4DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 477AC8DE2773BD1800F1C4DD /* GoogleService-Info.plist */; };
 		477AC8E1277478DF00F1C4DD /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8E0277478DF00F1C4DD /* DataBaseManager.swift */; };
 		477AC8E52777252D00F1C4DD /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8E42777252D00F1C4DD /* LaunchScreen.swift */; };
-		FB27A38148D958A59728D812 /* Pods_ComSpace_v4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903463F01EB8691C71CCE20E /* Pods_ComSpace_v4.framework */; };
+		47D2191A277869D4006CBC2E /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D21919277869D4006CBC2E /* LaunchViewController.swift */; };
+		47D2191C27786BCA006CBC2E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2191B27786BCA006CBC2E /* TabBarViewController.swift */; };
+		47D219202778AA38006CBC2E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2191F2778AA38006CBC2E /* Event.swift */; };
+		8A0525E7E8A7ED1539723049 /* Pods_ComSpace_v4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DF63FCC8FDD282A8E64EDB /* Pods_ComSpace_v4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B9B3DE4FC07295725D656AB /* Pods-ComSpace_v4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComSpace_v4.release.xcconfig"; path = "Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4.release.xcconfig"; sourceTree = "<group>"; };
+		19DF63FCC8FDD282A8E64EDB /* Pods_ComSpace_v4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComSpace_v4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4705042F2777917D00AD917E /* LPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPViewController.swift; sourceTree = "<group>"; };
 		477AC89E2770A78300F1C4DD /* ComSpace_v4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComSpace_v4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		477AC8A12770A78300F1C4DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,8 +47,6 @@
 		477AC8AF2770A78300F1C4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		477AC8C12770B03B00F1C4DD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		477AC8C32770B04600F1C4DD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		477AC8C52770B07200F1C4DD /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
-		477AC8C72770B08D00F1C4DD /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		477AC8C92770B09500F1C4DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		477AC8CB2770B09F00F1C4DD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		477AC8CD2770B0AC00F1C4DD /* AllEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllEventsViewController.swift; sourceTree = "<group>"; };
@@ -60,8 +59,11 @@
 		477AC8DE2773BD1800F1C4DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		477AC8E0277478DF00F1C4DD /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		477AC8E42777252D00F1C4DD /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
-		903463F01EB8691C71CCE20E /* Pods_ComSpace_v4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComSpace_v4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A852FCF192D09FEB4690B761 /* Pods-ComSpace_v4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComSpace_v4.debug.xcconfig"; path = "Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4.debug.xcconfig"; sourceTree = "<group>"; };
+		47D21919277869D4006CBC2E /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		47D2191B27786BCA006CBC2E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		47D2191F2778AA38006CBC2E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		51A5379A7829034FFBAF968E /* Pods-ComSpace_v4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComSpace_v4.debug.xcconfig"; path = "Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4.debug.xcconfig"; sourceTree = "<group>"; };
+		5FAD5FE34DA42BB507204B9F /* Pods-ComSpace_v4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComSpace_v4.release.xcconfig"; path = "Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,20 +71,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB27A38148D958A59728D812 /* Pods_ComSpace_v4.framework in Frameworks */,
+				8A0525E7E8A7ED1539723049 /* Pods_ComSpace_v4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2162F369B1911DB1D5BAA24B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19DF63FCC8FDD282A8E64EDB /* Pods_ComSpace_v4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		477AC8952770A78300F1C4DD = {
 			isa = PBXGroup;
 			children = (
 				477AC8A02770A78300F1C4DD /* ComSpace_v4 */,
 				477AC89F2770A78300F1C4DD /* Products */,
 				77B3DF1B676729A90DFC0E64 /* Pods */,
-				7EB97B186DDFFBDC1CA6DF06 /* Frameworks */,
+				2162F369B1911DB1D5BAA24B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +135,6 @@
 			children = (
 				477AC8C02770B02900F1C4DD /* Login */,
 				477AC8A52770A78300F1C4DD /* ConversationsViewController.swift */,
-				477AC8C52770B07200F1C4DD /* PhotoViewerViewController.swift */,
-				477AC8C72770B08D00F1C4DD /* VideoPlayerViewController.swift */,
 				477AC8C92770B09500F1C4DD /* HomeViewController.swift */,
 				477AC8CB2770B09F00F1C4DD /* ProfileViewController.swift */,
 				477AC8CD2770B0AC00F1C4DD /* AllEventsViewController.swift */,
@@ -134,6 +142,8 @@
 				477AC8D12770B0DA00F1C4DD /* NewConversationViewController.swift */,
 				477AC8E42777252D00F1C4DD /* LaunchScreen.swift */,
 				4705042F2777917D00AD917E /* LPViewController.swift */,
+				47D21919277869D4006CBC2E /* LaunchViewController.swift */,
+				47D2191B27786BCA006CBC2E /* TabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -149,6 +159,7 @@
 		477AC8BB2770AF0300F1C4DD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				47D2191F2778AA38006CBC2E /* Event.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -184,18 +195,10 @@
 		77B3DF1B676729A90DFC0E64 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A852FCF192D09FEB4690B761 /* Pods-ComSpace_v4.debug.xcconfig */,
-				0B9B3DE4FC07295725D656AB /* Pods-ComSpace_v4.release.xcconfig */,
+				51A5379A7829034FFBAF968E /* Pods-ComSpace_v4.debug.xcconfig */,
+				5FAD5FE34DA42BB507204B9F /* Pods-ComSpace_v4.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		7EB97B186DDFFBDC1CA6DF06 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				903463F01EB8691C71CCE20E /* Pods_ComSpace_v4.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,11 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 477AC8B22770A78300F1C4DD /* Build configuration list for PBXNativeTarget "ComSpace_v4" */;
 			buildPhases = (
-				9B77EAA79A92D07722AB1E4F /* [CP] Check Pods Manifest.lock */,
+				C3475297695C8BFD6EA6A2E6 /* [CP] Check Pods Manifest.lock */,
 				477AC89A2770A78300F1C4DD /* Sources */,
 				477AC89B2770A78300F1C4DD /* Frameworks */,
 				477AC89C2770A78300F1C4DD /* Resources */,
-				D0E415F89DA25FE160B562FB /* [CP] Embed Pods Frameworks */,
+				3461F5580EA9E8F7F89E91C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,7 +274,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9B77EAA79A92D07722AB1E4F /* [CP] Check Pods Manifest.lock */ = {
+		3461F5580EA9E8F7F89E91C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3475297695C8BFD6EA6A2E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,23 +313,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D0E415F89DA25FE160B562FB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ComSpace_v4/Pods-ComSpace_v4-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -318,20 +321,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				477AC8C22770B03B00F1C4DD /* LoginViewController.swift in Sources */,
+				47D2191A277869D4006CBC2E /* LaunchViewController.swift in Sources */,
 				477AC8CE2770B0AC00F1C4DD /* AllEventsViewController.swift in Sources */,
 				477AC8E52777252D00F1C4DD /* LaunchScreen.swift in Sources */,
+				47D2191C27786BCA006CBC2E /* TabBarViewController.swift in Sources */,
 				477AC8C42770B04600F1C4DD /* RegisterViewController.swift in Sources */,
+				47D219202778AA38006CBC2E /* Event.swift in Sources */,
 				477AC8A62770A78300F1C4DD /* ConversationsViewController.swift in Sources */,
 				477AC8E1277478DF00F1C4DD /* DataBaseManager.swift in Sources */,
 				477AC8CA2770B09500F1C4DD /* HomeViewController.swift in Sources */,
-				477AC8C82770B08D00F1C4DD /* VideoPlayerViewController.swift in Sources */,
 				477AC8D22770B0DA00F1C4DD /* NewConversationViewController.swift in Sources */,
 				477AC8A22770A78300F1C4DD /* AppDelegate.swift in Sources */,
 				477AC8D42770B29200F1C4DD /* Extensions.swift in Sources */,
 				477AC8CC2770B09F00F1C4DD /* ProfileViewController.swift in Sources */,
 				470504302777917D00AD917E /* LPViewController.swift in Sources */,
 				477AC8A42770A78300F1C4DD /* SceneDelegate.swift in Sources */,
-				477AC8C62770B07200F1C4DD /* PhotoViewerViewController.swift in Sources */,
 				477AC8D02770B0B700F1C4DD /* MyEventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,7 +485,7 @@
 		};
 		477AC8B32770A78300F1C4DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A852FCF192D09FEB4690B761 /* Pods-ComSpace_v4.debug.xcconfig */;
+			baseConfigurationReference = 51A5379A7829034FFBAF968E /* Pods-ComSpace_v4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,7 +498,6 @@
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to select photo for your profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -514,7 +517,7 @@
 		};
 		477AC8B42770A78300F1C4DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B9B3DE4FC07295725D656AB /* Pods-ComSpace_v4.release.xcconfig */;
+			baseConfigurationReference = 5FAD5FE34DA42BB507204B9F /* Pods-ComSpace_v4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -527,7 +530,6 @@
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to select photo for your profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

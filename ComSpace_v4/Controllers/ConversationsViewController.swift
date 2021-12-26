@@ -7,26 +7,36 @@
 
 import UIKit
 import FirebaseAuth
+import SwiftUI
 
 // tipa homeclass
 
-class ConversationsViewController: UIViewController {
+class ConversationsViewController: UIViewController, UIScrollViewDelegate {
 
+    private let scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.clipsToBounds = true
+        
+        return scrollView
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        DatabaseManager.shared.test()
+        
+        
     }
-
+    override func viewDidLayoutSubviews() {
+        scrollView.isScrollEnabled = true
+        super.viewDidLayoutSubviews()
+        scrollView.frame = view.bounds
+        
+        scrollView.contentSize = CGSize(width: 300, height: 1000)
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //
-        LaunchScreen()
-        if LaunchScreen().check() == true{
-        validateAuth()
-        }
     }
     private func validateAuth(){
-        
       // saves login parameters 
         if FirebaseAuth.Auth.auth().currentUser == nil {
                   let vc = LoginViewController()
@@ -34,9 +44,6 @@ class ConversationsViewController: UIViewController {
                   nav.modalPresentationStyle = .fullScreen
                   present(nav, animated: false)
               }
-        
-    }
-    private func launchScreen(){
         
     }
 }

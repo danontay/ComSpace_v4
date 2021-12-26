@@ -50,3 +50,4 @@ extension UIFont{
         return UIFont(name: "Mulish-Italic", size: 34)
     }
 }
+

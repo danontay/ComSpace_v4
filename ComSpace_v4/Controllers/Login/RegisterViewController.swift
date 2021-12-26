@@ -182,14 +182,7 @@ class RegisterViewController: UIViewController {
         scrollView.addSubview(UsernameField)
         scrollView.addSubview(registerButton)
         scrollView.addSubview(labelOfTerms)
-        
-//        view.addSubview(ChangeImageView)
-        
-//        сhangeImageView.isUserInteractionEnabled = true
-//        view.isUserInteractionEnabled = true
-//        scrollView.isUserInteractionEnabled = true
-//        label.isUserInteractionEnabled = true
-        
+
         setGestures()
       
     }

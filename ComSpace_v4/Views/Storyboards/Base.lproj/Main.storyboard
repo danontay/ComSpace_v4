@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="1561" y="824"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="1gO-Te-MBf">
             <objects>
-                <tabBarController id="fgD-S4-02G" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" id="fgD-S4-02G" customClass="TabBarViewController" customModule="ComSpace_v4" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F4y-w4-i3w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -115,7 +115,9 @@
         <scene sceneID="Tdh-L3-4qG">
             <objects>
                 <navigationController id="YE8-zc-dwh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="All Events" id="cmG-Hu-iCd"/>
+                    <tabBarItem key="tabBarItem" title="All Events" selectedImage="allEvents" id="cmG-Hu-iCd">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Tdo-zr-EPD">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -132,7 +134,9 @@
         <scene sceneID="rcS-lU-cbC">
             <objects>
                 <navigationController id="Kht-d2-uyw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="iM8-Oz-gEF"/>
+                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="user" id="iM8-Oz-gEF">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="uEc-ok-QJV">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -149,7 +153,9 @@
         <scene sceneID="f2P-D4-RkN">
             <objects>
                 <navigationController id="55K-xa-JvT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Events" id="Phq-4C-TIZ"/>
+                    <tabBarItem key="tabBarItem" title="My Events" selectedImage="myEvents" id="Phq-4C-TIZ">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="shO-Xb-Z7S">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -166,7 +172,9 @@
         <scene sceneID="496-MG-CP7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZNB-yN-j8O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="gAd-GW-RiL"/>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home" id="gAd-GW-RiL">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="WVl-Kq-rXD">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -183,6 +191,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="allEvents" width="24" height="24"/>
+        <image name="home" width="24" height="24"/>
+        <image name="myEvents" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -13,6 +13,8 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
+    var delegate: LaunchViewProtocol?
+    
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.clipsToBounds = true
@@ -72,7 +74,7 @@ class LoginViewController: UIViewController {
 //        GIDSignIn.sharedInstance.presentingViewController = self
         
         view.backgroundColor = .white
-        title = "Log In"
+//        title = "Log In"
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Register",
             style: .done,
@@ -180,7 +182,9 @@ class LoginViewController: UIViewController {
                 
                 let user = result.user
                 print("Logged In User \(user)")
-                strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+                strongSelf.navigationController?.dismiss(animated: true, completion: {
+                    self?.delegate?.setTabHomeVC()
+                })
             })
         })
 //

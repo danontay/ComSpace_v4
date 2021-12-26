@@ -8,9 +8,9 @@
 import UIKit
 
 class LPViewController: UIViewController {
-
+    var showLoginPage: Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(LaunchScreen())
+//        view.addSubview()
     }
 }
