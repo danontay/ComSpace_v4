@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		470504302777917D00AD917E /* LPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4705042F2777917D00AD917E /* LPViewController.swift */; };
+		474F99D82778C365000E5A6E /* SharedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F99D72778C365000E5A6E /* SharedDataModel.swift */; };
 		477AC8A22770A78300F1C4DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8A12770A78300F1C4DD /* AppDelegate.swift */; };
 		477AC8A42770A78300F1C4DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8A32770A78300F1C4DD /* SceneDelegate.swift */; };
 		477AC8A62770A78300F1C4DD /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8A52770A78300F1C4DD /* ConversationsViewController.swift */; };
@@ -20,7 +21,6 @@
 		477AC8CC2770B09F00F1C4DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8CB2770B09F00F1C4DD /* ProfileViewController.swift */; };
 		477AC8CE2770B0AC00F1C4DD /* AllEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8CD2770B0AC00F1C4DD /* AllEventsViewController.swift */; };
 		477AC8D02770B0B700F1C4DD /* MyEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8CF2770B0B700F1C4DD /* MyEventsViewController.swift */; };
-		477AC8D22770B0DA00F1C4DD /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8D12770B0DA00F1C4DD /* NewConversationViewController.swift */; };
 		477AC8D42770B29200F1C4DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477AC8D32770B29200F1C4DD /* Extensions.swift */; };
 		477AC8D92770B34000F1C4DD /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 477AC8D62770B34000F1C4DD /* Mulish-Regular.ttf */; };
 		477AC8DA2770B34000F1C4DD /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 477AC8D72770B34000F1C4DD /* Mulish-Bold.ttf */; };
@@ -37,6 +37,7 @@
 /* Begin PBXFileReference section */
 		19DF63FCC8FDD282A8E64EDB /* Pods_ComSpace_v4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComSpace_v4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4705042F2777917D00AD917E /* LPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPViewController.swift; sourceTree = "<group>"; };
+		474F99D72778C365000E5A6E /* SharedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataModel.swift; sourceTree = "<group>"; };
 		477AC89E2770A78300F1C4DD /* ComSpace_v4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComSpace_v4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		477AC8A12770A78300F1C4DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		477AC8A32770A78300F1C4DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		477AC8CB2770B09F00F1C4DD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		477AC8CD2770B0AC00F1C4DD /* AllEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllEventsViewController.swift; sourceTree = "<group>"; };
 		477AC8CF2770B0B700F1C4DD /* MyEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewController.swift; sourceTree = "<group>"; };
-		477AC8D12770B0DA00F1C4DD /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		477AC8D32770B29200F1C4DD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		477AC8D62770B34000F1C4DD /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
 		477AC8D72770B34000F1C4DD /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
@@ -139,11 +139,11 @@
 				477AC8CB2770B09F00F1C4DD /* ProfileViewController.swift */,
 				477AC8CD2770B0AC00F1C4DD /* AllEventsViewController.swift */,
 				477AC8CF2770B0B700F1C4DD /* MyEventsViewController.swift */,
-				477AC8D12770B0DA00F1C4DD /* NewConversationViewController.swift */,
 				477AC8E42777252D00F1C4DD /* LaunchScreen.swift */,
 				4705042F2777917D00AD917E /* LPViewController.swift */,
 				47D21919277869D4006CBC2E /* LaunchViewController.swift */,
 				47D2191B27786BCA006CBC2E /* TabBarViewController.swift */,
+				474F99D72778C365000E5A6E /* SharedDataModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -326,11 +326,11 @@
 				477AC8E52777252D00F1C4DD /* LaunchScreen.swift in Sources */,
 				47D2191C27786BCA006CBC2E /* TabBarViewController.swift in Sources */,
 				477AC8C42770B04600F1C4DD /* RegisterViewController.swift in Sources */,
+				474F99D82778C365000E5A6E /* SharedDataModel.swift in Sources */,
 				47D219202778AA38006CBC2E /* Event.swift in Sources */,
 				477AC8A62770A78300F1C4DD /* ConversationsViewController.swift in Sources */,
 				477AC8E1277478DF00F1C4DD /* DataBaseManager.swift in Sources */,
 				477AC8CA2770B09500F1C4DD /* HomeViewController.swift in Sources */,
-				477AC8D22770B0DA00F1C4DD /* NewConversationViewController.swift in Sources */,
 				477AC8A22770A78300F1C4DD /* AppDelegate.swift in Sources */,
 				477AC8D42770B29200F1C4DD /* Extensions.swift in Sources */,
 				477AC8CC2770B09F00F1C4DD /* ProfileViewController.swift in Sources */,
@@ -501,7 +501,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,7 +533,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

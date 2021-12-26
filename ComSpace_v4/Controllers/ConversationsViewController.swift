@@ -7,12 +7,14 @@
 
 import UIKit
 import FirebaseAuth
+import CoreLocation
 import SwiftUI
 
 // tipa homeclass
 
 class ConversationsViewController: UIViewController, UIScrollViewDelegate {
-
+//    var hm: HomeViewModel = HomeViewModel()
+    let controller1 = UIHostingController(rootView: LaunchScreen())
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.clipsToBounds = true
@@ -23,8 +25,11 @@ class ConversationsViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+//        hm.locationManager.delegate = HomeViewModel()
+//        hm.locationManager.requestWhenInUseAuthorization()
+        view.isUserInteractionEnabled = true
+        view.addSubview(controller1.view)
+        setUpConstraints()
     }
     override func viewDidLayoutSubviews() {
         scrollView.isScrollEnabled = true
@@ -46,5 +51,34 @@ class ConversationsViewController: UIViewController, UIScrollViewDelegate {
               }
         
     }
+    fileprivate func setUpConstraints(){
+        controller1.view.translatesAutoresizingMaskIntoConstraints = false
+        controller1.view.topAnchor.constraint(equalTo: (view.topAnchor)).isActive = true
+        controller1.view.bottomAnchor.constraint(equalTo: (view.bottomAnchor)).isActive = true
+        controller1.view.rightAnchor.constraint(equalTo: (view.rightAnchor)).isActive = true
+        controller1.view.leftAnchor.constraint(equalTo: (view.leftAnchor)).isActive = true
+        
+
+    }
 }
 
+//
+//class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
+//    @Published var locationManager = CLLocationManager()
+//    @Published var search = ""
+//
+//    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+//        switch manager.authorizationStatus{
+//        case .authorizedWhenInUse:
+//            print("authorized")
+//        case .denied:
+//            print("denied")
+//        default:
+//            print("unknown")
+//        }
+//    }
+//
+//    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager, didFailwithError error: Error) {
+//        print(error.localizedDescription)
+//    }
+//}

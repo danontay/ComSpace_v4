@@ -16,7 +16,7 @@ struct LaunchScreen: View {
     
         let imageView = UIImageView()
         imageView.image = UIImage(named: "MainLogoSvg")
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         return imageView
     
     }()
@@ -28,23 +28,24 @@ struct LaunchScreen: View {
             Spacer()
             
             HStack{
-                Image("whitelogo")
+                Image("MainLogoSvg")
                 VStack{
                     Text("ComSpace")
                         .font(.custom("Mulish-Bold", size: 40))
-                        .foregroundColor(.white)
+                        .foregroundColor(.purple)
                     Text("community space")
                         .font(.custom("Mulish-Regular", size: 20))
-                        .foregroundColor(.white)
+                        .foregroundColor(.purple)
                 }
             }
             Spacer()
             Text("Networking is around you!")
                 .font(.custom("Mulish-Bold", size: 20))
-                .foregroundColor(.white)
+                .foregroundColor(.purple)
             Text("Create your own community")
                 .font(.custom("Mulish-Bold", size: 16))
-                .foregroundColor(.white)
+                .foregroundColor(.purple)
+            
             Button{
                 showLoginPage = true
             }
@@ -53,7 +54,7 @@ struct LaunchScreen: View {
                 .font(.custom("Mulish-Bold", size: 18))
                 .padding(.vertical, 18)
                 .frame(maxWidth: .infinity)
-                .background(Color.white)
+                .background(Color.purple)
                 .cornerRadius(20)
                 .foregroundColor(Color(.primaryColor))
             }
@@ -63,9 +64,7 @@ struct LaunchScreen: View {
         }
         .padding(.top,getRec().height < 750 ? 10 : 30)
 
-        .background(
-        Image("launchScreen")
-        )
+        .background(Color.white)
     }
     public func check() -> Bool{
         return showLoginPage
