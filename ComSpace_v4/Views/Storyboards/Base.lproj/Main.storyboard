@@ -4,22 +4,23 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Events-->
+        <!--My Events View Controller-->
         <scene sceneID="ibp-he-YXW">
             <objects>
                 <viewController id="nHd-7P-tnb" customClass="MyEventsViewController" customModule="ComSpace_v4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3gS-bv-akY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="FzH-9Z-hSZ"/>
+                        <viewLayoutGuide key="safeArea" id="CgP-Ak-xrJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Events" id="l50-KI-YDn"/>
+                    <navigationItem key="navigationItem" id="l50-KI-YDn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQL-5K-pA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,29 +33,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="JnX-tg-fut"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <accessibility key="accessibilityConfiguration">
                             <accessibilityTraits key="traits" allowsDirectInteraction="YES"/>
                         </accessibility>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="efw-qk-khD"/>
+                    <navigationItem key="navigationItem" id="efw-qk-khD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1204" y="824"/>
         </scene>
-        <!--All Events-->
+        <!--All Events View Controller-->
         <scene sceneID="Rzp-sG-g5W">
             <objects>
                 <viewController id="I3Q-Lh-Y2J" customClass="AllEventsViewController" customModule="ComSpace_v4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ndg-qx-gVP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="lK7-56-7Xr"/>
+                        <viewLayoutGuide key="safeArea" id="jRW-Fj-2XQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="All Events" id="DsY-gN-Sd0"/>
+                    <navigationItem key="navigationItem" id="DsY-gN-Sd0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clq-pK-9bb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,17 +70,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="L0V-tv-0nR">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="CG7-60-b9p"/>
+                        <viewLayoutGuide key="safeArea" id="6vH-TU-s4T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="L0V-tv-0nR" firstAttribute="top" secondItem="CG7-60-b9p" secondAttribute="top" id="L3l-KE-5Ew"/>
-                            <constraint firstItem="CG7-60-b9p" firstAttribute="bottom" secondItem="L0V-tv-0nR" secondAttribute="bottom" id="dhu-vV-QWa"/>
-                            <constraint firstItem="CG7-60-b9p" firstAttribute="trailing" secondItem="L0V-tv-0nR" secondAttribute="trailing" id="jrv-XD-rXr"/>
-                            <constraint firstItem="L0V-tv-0nR" firstAttribute="leading" secondItem="CG7-60-b9p" secondAttribute="leading" id="o5S-I9-E6p"/>
+                            <constraint firstItem="L0V-tv-0nR" firstAttribute="top" secondItem="6vH-TU-s4T" secondAttribute="top" id="L3l-KE-5Ew"/>
+                            <constraint firstItem="6vH-TU-s4T" firstAttribute="bottom" secondItem="L0V-tv-0nR" secondAttribute="bottom" id="dhu-vV-QWa"/>
+                            <constraint firstItem="6vH-TU-s4T" firstAttribute="trailing" secondItem="L0V-tv-0nR" secondAttribute="trailing" id="jrv-XD-rXr"/>
+                            <constraint firstItem="L0V-tv-0nR" firstAttribute="leading" secondItem="6vH-TU-s4T" secondAttribute="leading" id="o5S-I9-E6p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="5wr-9r-LXQ"/>
@@ -99,6 +100,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.9187793417125425" blue="0.60461929080653154" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.92156862750000001" green="0.53725490200000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedcolorTintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="ZNB-yN-j8O" kind="relationship" relationship="viewControllers" id="awn-XB-FAS"/>
@@ -111,15 +119,15 @@
             </objects>
             <point key="canvasLocation" x="19" y="-676"/>
         </scene>
-        <!--All Events-->
+        <!--Navigation Controller-->
         <scene sceneID="Tdh-L3-4qG">
             <objects>
                 <navigationController id="YE8-zc-dwh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="All Events" selectedImage="allEvents" id="cmG-Hu-iCd">
+                    <tabBarItem key="tabBarItem" title="" image="allEvents" selectedImage="allEvents" id="cmG-Hu-iCd">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Tdo-zr-EPD">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tdo-zr-EPD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -130,15 +138,15 @@
             </objects>
             <point key="canvasLocation" x="697" y="94"/>
         </scene>
-        <!--Profile-->
+        <!--Navigation Controller-->
         <scene sceneID="rcS-lU-cbC">
             <objects>
                 <navigationController id="Kht-d2-uyw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="user" id="iM8-Oz-gEF">
+                    <tabBarItem key="tabBarItem" title="" image="user" selectedImage="user" id="iM8-Oz-gEF">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="uEc-ok-QJV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uEc-ok-QJV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -149,15 +157,16 @@
             </objects>
             <point key="canvasLocation" x="1561" y="94"/>
         </scene>
-        <!--My Events-->
+        <!--Navigation Controller-->
         <scene sceneID="f2P-D4-RkN">
             <objects>
                 <navigationController id="55K-xa-JvT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Events" selectedImage="myEvents" id="Phq-4C-TIZ">
+                    <tabBarItem key="tabBarItem" title="" selectedImage="heart.fill" catalog="system" id="Phq-4C-TIZ">
+                        <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="shO-Xb-Z7S">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="shO-Xb-Z7S">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -168,16 +177,15 @@
             </objects>
             <point key="canvasLocation" x="-245" y="94"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="496-MG-CP7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZNB-yN-j8O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home" id="gAd-GW-RiL">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZNB-yN-j8O" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="home" selectedImage="home" id="gAd-GW-RiL">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="WVl-Kq-rXD">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WVl-Kq-rXD">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -192,8 +200,9 @@
     </scenes>
     <resources>
         <image name="allEvents" width="24" height="24"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="home" width="24" height="24"/>
-        <image name="myEvents" width="24" height="24"/>
         <image name="user" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

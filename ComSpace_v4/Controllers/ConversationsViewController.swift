@@ -14,17 +14,16 @@ import SwiftUI
 
 class ConversationsViewController: UIViewController, UIScrollViewDelegate {
 //    var hm: HomeViewModel = HomeViewModel()
-    let controller1 = UIHostingController(rootView: LaunchScreen())
+    let controller1 = UIHostingController(rootView: Home())
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.clipsToBounds = true
-        
         return scrollView
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        hm.locationManager.delegate = HomeViewModel()
 //        hm.locationManager.requestWhenInUseAuthorization()
         view.isUserInteractionEnabled = true
@@ -32,9 +31,11 @@ class ConversationsViewController: UIViewController, UIScrollViewDelegate {
         setUpConstraints()
     }
     override func viewDidLayoutSubviews() {
+//        view.insetsLayoutMarginsFromSafeArea = true
         scrollView.isScrollEnabled = true
         super.viewDidLayoutSubviews()
         scrollView.frame = view.bounds
+    
         
         scrollView.contentSize = CGSize(width: 300, height: 1000)
     }
@@ -52,33 +53,19 @@ class ConversationsViewController: UIViewController, UIScrollViewDelegate {
         
     }
     fileprivate func setUpConstraints(){
-        controller1.view.translatesAutoresizingMaskIntoConstraints = false
-        controller1.view.topAnchor.constraint(equalTo: (view.topAnchor)).isActive = true
-        controller1.view.bottomAnchor.constraint(equalTo: (view.bottomAnchor)).isActive = true
-        controller1.view.rightAnchor.constraint(equalTo: (view.rightAnchor)).isActive = true
-        controller1.view.leftAnchor.constraint(equalTo: (view.leftAnchor)).isActive = true
         
-
+        
+        controller1.view.translatesAutoresizingMaskIntoConstraints = false
+        
+//        controller1.view.topAnchor.constraint(equalTo: (view.topAnchor)).isActive = true
+//        controller1.view.bottomAnchor.constraint(equalTo: (view.bottomAnchor)).isActive = true
+//        controller1.view.rightAnchor.constraint(equalTo: (view.rightAnchor)).isActive = true
+//        controller1.view.leftAnchor.constraint(equalTo: (view.leftAnchor)).isActive = true
+//
+        controller1.view.topAnchor.constraint(equalTo: (self.view.safeAreaLayoutGuide.topAnchor)).isActive = true
+        controller1.view.bottomAnchor.constraint(equalTo: (self.view.safeAreaLayoutGuide.bottomAnchor)).isActive = true
+        controller1.view.rightAnchor.constraint(equalTo: (self.view.safeAreaLayoutGuide.rightAnchor)).isActive = true
+        controller1.view.leftAnchor.constraint(equalTo: (self.view.safeAreaLayoutGuide.leftAnchor)).isActive = true
+        
     }
 }
-
-//
-//class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
-//    @Published var locationManager = CLLocationManager()
-//    @Published var search = ""
-//
-//    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-//        switch manager.authorizationStatus{
-//        case .authorizedWhenInUse:
-//            print("authorized")
-//        case .denied:
-//            print("denied")
-//        default:
-//            print("unknown")
-//        }
-//    }
-//
-//    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager, didFailwithError error: Error) {
-//        print(error.localizedDescription)
-//    }
-//}

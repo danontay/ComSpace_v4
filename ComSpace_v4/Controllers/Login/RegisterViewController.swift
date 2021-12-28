@@ -294,6 +294,20 @@ class RegisterViewController: UIViewController {
         }
         // firebase log in
         
+//        spinner.show(in: view)
+        
+        DatabaseManager.shared.userExists(with: email, completion: {[weak self] exists in
+            guard let strongSelf = self else {
+                return
+            }
+            guard !exists else {
+                // user already exists
+                strongSelf.alertUserLoginError(message: "Looks  like a user is aleady exists")
+                return
+            }
+            
+        })
+        
         Firebase.Auth.auth().createUser(withEmail: email, password: password, completion: {[weak self] authResult, error in
             guard let strongSelf = self else { return }
             
@@ -304,14 +318,37 @@ class RegisterViewController: UIViewController {
             
 //            let user = result.user
 //            print("User id created \(user)")
-            DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName,
-                                                                lastName: lastName,
-                                                                emailAddress: email))
+            let cUser =  ChatAppUser(firstName: firstName,
+                                     lastName: lastName,
+                                     emailAddress: email)
+            DatabaseManager.shared.insertUser(with: cUser, completion: {success in
+                if success {
+                    // upload image
+                    guard let image = strongSelf.сhangeImageView.image, let data = image.pngData()
+                    else{
+                        
+                        return
+                        
+                    }
+                    let fileName = cUser.profilePictureFileName
+                    StorageManager.shared.profileUploadPicture(with: data, fileName: fileName, completion: {result in
+                        switch result{
+                        case .success(let downloadUrl):
+                            UserDefaults.standard.set(downloadUrl, forKey: "profile_picture_url")
+                             print(downloadUrl)
+                            
+                        case .failure(let error):
+                            print("Storage manager error \(error)")
+                             
+                        }
+                    })
+                }
+            } )
             
             strongSelf.navigationController?.dismiss(animated: true, completion: nil)
         })
     }
-    func alertUserLoginError(){
+    func alertUserLoginError(message: String = "Please enter all information"){
         
         let alert =  UIAlertController(title: "Woops", message: "Please enter all information to create a new account.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(

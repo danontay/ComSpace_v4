@@ -14,6 +14,12 @@ final class DatabaseManager{
     
     private let database = Database.database().reference()
     
+    static func safeEmail(emailAddress: String) -> String {
+        var safeEmail = emailAddress.replacingOccurrences(of: ".", with: "-")
+        safeEmail = safeEmail.replacingOccurrences(of: "#", with: "-")
+        return safeEmail
+    }
+    
 //    public func test(){
 //        database.child("foo").setValue(["something" : true])
 //    }
@@ -39,12 +45,19 @@ final class DatabaseManager{
         }
         
         /// Inserts new users to database
-        public func insertUser(with user: ChatAppUser){
+        public func insertUser(with user: ChatAppUser, completion:  @escaping (Bool) -> Void ){
             database.child(user.safeEmail).setValue([
                 "first_name" : user.firstName,
                 "last_name" : user.lastName,
     //            "email_address" : user.emailAddress
-            ])
+            ], withCompletionBlock: {error, _ in
+                guard error == nil else {
+                    print("failed to write to database")
+                    completion(false)
+                    return
+                }
+                completion(true )
+            })
     }
 }
 public struct ChatAppUser{
@@ -57,6 +70,9 @@ public struct ChatAppUser{
         safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
         
         return safeEmail
+    }
+    var profilePictureFileName: String{
+        return "\(safeEmail)_profile_picture.png"
     }
     
  }

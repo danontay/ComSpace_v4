@@ -21,6 +21,12 @@ class LoginViewController: UIViewController {
         
         return scrollView
     }()
+    private let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "MainLogoSvg")
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
     
     private let emailField: UITextField = {
         let field = UITextField()
@@ -55,6 +61,7 @@ class LoginViewController: UIViewController {
     private let loginButton1: FBLoginButton = {
         let button = FBLoginButton()
         button.permissions = ["email","public_profile"]
+        button.layer.cornerRadius = 20
         return button
     }()
     
@@ -112,12 +119,6 @@ class LoginViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
         
     }
-    private let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "MainLogoSvg")
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let size = view.width/3
@@ -270,9 +271,15 @@ extension LoginViewController: LoginButtonDelegate{
             
             DatabaseManager.shared.userExists(with: email, completion: {exists in
                 if !exists {
-                    DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName,
-                                                                        lastName: lastName,
-                                                                        emailAddress: email))
+                    let cUser =  ChatAppUser(firstName: firstName,
+                                             lastName: lastName,
+                                             emailAddress: email)
+                    DatabaseManager.shared.insertUser(with:cUser, completion: {success in
+                        if success{
+                            // upload image
+                             
+                        }
+                    })
                 }
             })
             

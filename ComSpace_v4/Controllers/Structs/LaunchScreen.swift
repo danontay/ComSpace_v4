@@ -24,8 +24,6 @@ struct LaunchScreen: View {
     var body: some View {
     
         VStack{
-        
-            Spacer()
             
             HStack{
                 Image("MainLogoSvg")
@@ -38,7 +36,7 @@ struct LaunchScreen: View {
                         .foregroundColor(.purple)
                 }
             }
-            Spacer()
+            
             Text("Networking is around you!")
                 .font(.custom("Mulish-Bold", size: 20))
                 .foregroundColor(.purple)
@@ -54,7 +52,7 @@ struct LaunchScreen: View {
                 .font(.custom("Mulish-Bold", size: 18))
                 .padding(.vertical, 18)
                 .frame(maxWidth: .infinity)
-                .background(Color.purple)
+                .background(Color.black)
                 .cornerRadius(20)
                 .foregroundColor(Color(.primaryColor))
             }

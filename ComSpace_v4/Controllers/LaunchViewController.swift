@@ -14,8 +14,6 @@ protocol LaunchViewProtocol {
 
 class LaunchViewController: UIViewController, LaunchViewProtocol {
 
-    
-    
     let backgroundImageView: UIImageView = {
         let i = UIImageView()
         i.contentMode = .scaleAspectFill
@@ -29,7 +27,6 @@ class LaunchViewController: UIViewController, LaunchViewProtocol {
         l.numberOfLines = 0
         l.textAlignment = .left
         l.textColor = .white
-//        l.font = .systemFont(ofSize: 40)
         l.text = "ComSpace"
         l.font = UIFont(name: "Mulish-Bold", size: 40.0)
         l.translatesAutoresizingMaskIntoConstraints = false
@@ -40,7 +37,6 @@ class LaunchViewController: UIViewController, LaunchViewProtocol {
         l.numberOfLines = 0
         l.textAlignment = .left
         l.textColor = .white
-//        l.font = .systemFont(ofSize: 20)
         l.font = UIFont(name: "Mulish-Regular", size: 20.0)
         l.textColor = .white
         l.text = "community space"
@@ -56,7 +52,6 @@ class LaunchViewController: UIViewController, LaunchViewProtocol {
         jl.font = .systemFont(ofSize: 20)
         jl.text = "Networking is around you!"
         jl.font = UIFont(name: "Mulish-Bold", size: 20.0)
-//        jl.font = UIFont.systemFont(ofSize: 40.0, weight: .bold)
         jl.textColor = .white
         jl.translatesAutoresizingMaskIntoConstraints = false
         return jl
@@ -94,7 +89,7 @@ class LaunchViewController: UIViewController, LaunchViewProtocol {
         super.viewDidLoad()
         setupViews()
         startButton.addTarget(self, action: #selector(validateAuth), for:.touchUpInside)
-
+        
         // Do any additional setup after loading the view.
     }
     func setTabHomeVC() {
@@ -121,19 +116,12 @@ class LaunchViewController: UIViewController, LaunchViewProtocol {
             } else {
                 print("storyboard - nil")
             }
-//            let nav = UINavigationController(rootViewController: vc)
-            
         }
-        // вот это логин
-//        это первое грузится
-//        а нужно сделать так чтобы вьюшка прриветсвия
-//
-//        потом после кнопки этот логин
         
     }
     
     func setupViews() {
-        self.view.backgroundColor = .magenta
+        self.view.backgroundColor = .black
         
         self.view.addSubview(backgroundImageView)
         self.view.addSubview(headerLabel1)
@@ -159,16 +147,10 @@ class LaunchViewController: UIViewController, LaunchViewProtocol {
             jaiLabel2.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             jaiLabel2.centerYAnchor.constraint(equalTo: self.jaiLabel1.bottomAnchor, constant: +10),
             
-            startButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -20),
+            startButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -60),
             startButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 20),
             startButton.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -20),
             startButton.heightAnchor.constraint(equalToConstant: 50)
         ])
-        
-        
     }
-    
-
-
-
 }

@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
             else {
               return
             }
+            
 
             let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                            accessToken: authentication.accessToken)
