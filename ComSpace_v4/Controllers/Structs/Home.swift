@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Home: View {
     @State var exampleColor : Color = Color(red: 240/255, green: 240/255, blue: 240/255)
-
+    @EnvironmentObject var sharedData: SharedDataModel
     @StateObject var homeData: HomeViewModel = HomeViewModel()
     @Namespace var animation
     var body: some View {
@@ -94,6 +94,14 @@ struct Home: View {
         }
         .overlay(
             ZStack{
+                if homeData.showMoreEventsOnType{
+                    MoreEventsView()
+                        .environmentObject(homeData)
+                }
+            }
+        )
+        .overlay(
+            ZStack{
                 if homeData.searchActivated{
                     SearchView(animation: animation)
                         .environmentObject(homeData)
@@ -134,6 +142,12 @@ struct Home: View {
         .background(
             Color.white.cornerRadius(20)
         )
+        .onTapGesture {
+            withAnimation(.easeInOut){
+                sharedData.detailEvent = event
+                sharedData.showDetailEvent = true
+            }
+        }
         .padding(.top, 80)
     }
     @ViewBuilder
@@ -185,6 +199,7 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
+//       MainPage()
         Home()
     }
 }

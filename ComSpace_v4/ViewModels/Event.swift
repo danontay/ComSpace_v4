@@ -23,7 +23,7 @@ struct Event: Identifiable,Hashable {
 enum EventType: String,CaseIterable{
     case IT = "IT"
     case DigitalArt = "Digital Art"
-    case Linguistics = "Linguistics"
+//    case Linguistics = "Linguistics"
     case Anteiku = "Anteiku"
 //    case Plants = "Plants"
     case Nature = "Nature" 

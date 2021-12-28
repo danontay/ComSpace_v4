@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductDetailView: View {
-    var animation: Namespace.ID
+    @Namespace var animation
     public var exampleColor : Color = Color(red: 240/255, green: 240/255, blue: 240/255)
     var event: Event
     @EnvironmentObject var sharedData: SharedDataModel
@@ -21,7 +21,7 @@ struct ProductDetailView: View {
             HStack{
                 Button{
                     withAnimation(.easeInOut){
-                        sharedData.showDetailProduct = false
+                        sharedData.showDetailEvent = false
                     }
                 }
             label:{
@@ -126,8 +126,9 @@ struct ProductDetailView: View {
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-//        ProductDetailView(event:HomeViewModel().events[0])
-//            .environmentObject(SharedDataModel())
-        Home()
+        ProductDetailView(event:HomeViewModel().events[0])
+            .environmentObject(SharedDataModel())
+//        ProductDetailView(animation: animation,event: Event)
     }
 }
+

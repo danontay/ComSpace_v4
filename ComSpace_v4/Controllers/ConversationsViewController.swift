@@ -14,6 +14,7 @@ import SwiftUI
 
 class ConversationsViewController: UIViewController, UIScrollViewDelegate {
 //    var hm: HomeViewModel = HomeViewModel()
+//    var animation: Namespace.ID
     let controller1 = UIHostingController(rootView: Home())
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()

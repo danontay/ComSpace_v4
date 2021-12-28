@@ -15,6 +15,20 @@ struct MoreEventsView: View {
     var body: some View {
   
         ScrollView(.vertical, showsIndicators: false){
+            HStack(spacing: 20){
+                Button{
+                    withAnimation{
+                        homeData.showMoreEventsOnType = false
+                    }
+                    homeData.searchText = ""
+                }
+            label:{
+                Image(systemName: "arrow.left")
+                    .font(.title2)
+                    .foregroundColor(Color.black.opacity(0.7))
+                
+            }
+            }
             VStack(spacing: 15){
                 Text("More Events")
                     .font(.custom("Mulish-Bold", size: 18))

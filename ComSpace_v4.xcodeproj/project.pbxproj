@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47023E12277A9BE300F56B71 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47023E11277A9BE300F56B71 /* MainPage.swift */; };
+		47023E14277AA99400F56B71 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47023E13277AA99400F56B71 /* Profile.swift */; };
+		47023E16277AB5F700F56B71 /* Liked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47023E15277AB5F700F56B71 /* Liked.swift */; };
+		47023E18277ACEED00F56B71 /* MyEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47023E17277ACEED00F56B71 /* MyEvents.swift */; };
 		4727E34327790BC8005EB164 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4727E34227790BC8005EB164 /* Home.swift */; };
 		4727E345277910AB005EB164 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4727E344277910AB005EB164 /* Event.swift */; };
 		4727E3472779131A005EB164 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4727E3462779131A005EB164 /* HomeViewModel.swift */; };
@@ -42,6 +46,10 @@
 
 /* Begin PBXFileReference section */
 		19DF63FCC8FDD282A8E64EDB /* Pods_ComSpace_v4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComSpace_v4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47023E11277A9BE300F56B71 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		47023E13277AA99400F56B71 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		47023E15277AB5F700F56B71 /* Liked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liked.swift; sourceTree = "<group>"; };
+		47023E17277ACEED00F56B71 /* MyEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEvents.swift; sourceTree = "<group>"; };
 		4727E34227790BC8005EB164 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4727E344277910AB005EB164 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		4727E3462779131A005EB164 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -106,6 +114,10 @@
 				4727E34A277A0217005EB164 /* SearchView.swift */,
 				4727E34E277A4768005EB164 /* StaggeredGrid.swift */,
 				4727E352277A880F005EB164 /* ProductDetailView.swift */,
+				47023E11277A9BE300F56B71 /* MainPage.swift */,
+				47023E13277AA99400F56B71 /* Profile.swift */,
+				47023E15277AB5F700F56B71 /* Liked.swift */,
+				47023E17277ACEED00F56B71 /* MyEvents.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -351,16 +363,20 @@
 				4727E3472779131A005EB164 /* HomeViewModel.swift in Sources */,
 				47D2191A277869D4006CBC2E /* LaunchViewController.swift in Sources */,
 				477AC8CE2770B0AC00F1C4DD /* AllEventsViewController.swift in Sources */,
+				47023E18277ACEED00F56B71 /* MyEvents.swift in Sources */,
 				477AC8E52777252D00F1C4DD /* LaunchScreen.swift in Sources */,
 				47D2191C27786BCA006CBC2E /* TabBarViewController.swift in Sources */,
 				477AC8C42770B04600F1C4DD /* RegisterViewController.swift in Sources */,
 				4727E34327790BC8005EB164 /* Home.swift in Sources */,
 				474F99D82778C365000E5A6E /* SharedDataModel.swift in Sources */,
 				4727E34F277A4768005EB164 /* StaggeredGrid.swift in Sources */,
+				47023E12277A9BE300F56B71 /* MainPage.swift in Sources */,
 				4727E345277910AB005EB164 /* Event.swift in Sources */,
 				477AC8A62770A78300F1C4DD /* ConversationsViewController.swift in Sources */,
 				4727E351277A607D005EB164 /* StorageManager.swift in Sources */,
 				477AC8E1277478DF00F1C4DD /* DataBaseManager.swift in Sources */,
+				47023E14277AA99400F56B71 /* Profile.swift in Sources */,
+				47023E16277AB5F700F56B71 /* Liked.swift in Sources */,
 				477AC8CA2770B09500F1C4DD /* HomeViewController.swift in Sources */,
 				4727E353277A880F005EB164 /* ProductDetailView.swift in Sources */,
 				477AC8A22770A78300F1C4DD /* AppDelegate.swift in Sources */,

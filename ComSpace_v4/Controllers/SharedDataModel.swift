@@ -10,18 +10,31 @@ import Foundation
 class SharedDataModel: ObservableObject {
     
     // Detail Product Data....
-    @Published var detailProduct: Event?
-    @Published var showDetailProduct: Bool = false
+    @Published var detailEvent: Event?
+    @Published var showDetailEvent: Bool = false
     
     // matched Geoemtry Effect from Search page...
     @Published var fromSearchPage: Bool = false
     
     // Liked Products...
-    @Published var likedProducts: [Event] = []
+    @Published var likedEvents: [Event] = []
     
     // basket Products...
-    @Published var cartProducts: [Event] = []
+    @Published var cartEvents: [Event] = []
     
-    // calculating Total price...
+    // get total place
+    
+//    func getPlace()->String{
+//        
+//        var total: Int = 0
+//        
+//        cartEvents.forEach { event in
+//            
+//            let place = event.place
+//            total += place
+//        }
+//        
+//        return "$\(total)"
+//    }
 
 }
